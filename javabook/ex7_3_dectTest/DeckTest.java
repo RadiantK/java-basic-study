@@ -1,4 +1,4 @@
-package dectTest;
+package ex7_3_dectTest;
 
 public class DeckTest {
 
