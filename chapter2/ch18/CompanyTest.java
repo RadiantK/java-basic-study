@@ -1,0 +1,17 @@
+package ch18;
+
+
+public class CompanyTest {
+
+	public static void main(String[] args) {
+
+		Company company1 = Company.getTnstance();
+		Company company2 = Company.getTnstance();
+		
+		System.out.println(company1);
+		System.out.println(company2);
+		
+	
+	}
+
+}
