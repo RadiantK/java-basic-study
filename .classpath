@@ -5,14 +5,15 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="javabook"/>
-	<classpathentry kind="src" path="chapter5"/>
-	<classpathentry kind="src" path="chapter6"/>
-	<classpathentry kind="src" path="chapter7"/>
-	<classpathentry kind="src" path="chapter1"/>
-	<classpathentry kind="src" path="chapter2"/>
-	<classpathentry kind="src" path="chapter3"/>
-	<classpathentry kind="src" path="chapter4"/>
+	<classpathentry kind="src" path="javabook_ch1_5"/>
+	<classpathentry kind="src" path="fc_chapter5"/>
+	<classpathentry kind="src" path="fc_chapter6"/>
+	<classpathentry kind="src" path="fc_chapter7"/>
+	<classpathentry kind="src" path="fc_chapter1"/>
+	<classpathentry kind="src" path="fc_chapter2"/>
+	<classpathentry kind="src" path="fc_chapter3"/>
+	<classpathentry kind="src" path="fc_chapter4"/>
 	<classpathentry kind="src" path="lifecoding"/>
+	<classpathentry kind="src" path="javabook_ch6_obj1"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
