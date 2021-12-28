@@ -14,6 +14,6 @@
 	<classpathentry kind="src" path="fc_chapter3"/>
 	<classpathentry kind="src" path="fc_chapter4"/>
 	<classpathentry kind="src" path="lifecoding"/>
-	<classpathentry kind="src" path="javabook_ch6_obj1"/>
+	<classpathentry kind="src" path="javabook_obj"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

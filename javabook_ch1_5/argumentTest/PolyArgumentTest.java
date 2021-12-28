@@ -53,10 +53,10 @@ public class PolyArgumentTest {
 	public static void main(String[] args) {
 
 		Buyer b = new Buyer();
-		Tv tv = new Tv();
+//		Tv tv = new Tv();
 		Computer com = new Computer();
 		
-		b.Buy(tv);
+		b.Buy(new Tv());
 		b.Buy(com);
 		
 		System.out.println("구매하고 남은 돈은 " + b.money +"입니다.");

@@ -1,4 +1,4 @@
- package ch02;
+ package ch02_equals_hashcode;
 
 public class EqualsTest {
 

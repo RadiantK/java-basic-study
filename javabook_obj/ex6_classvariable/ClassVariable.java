@@ -1,4 +1,4 @@
-package ex6_7_classv;
+package ex6_classvariable;
 
 class Data {
 	int x;
@@ -6,6 +6,8 @@ class Data {
 }
 
 public class ClassVariable {
+	
+	ClassVariable() {}
 
 	public static void main(String[] args) {
 
@@ -16,8 +18,13 @@ public class ClassVariable {
 		d2.x = 11;
 		System.out.println("d = " + d.x);
 		System.out.println("d2 = " + d2.x);
+		System.out.println();
 		
+		change2(d);
 		cv.change(d2);
+		System.out.println();
+		
+		
 		System.out.println("d = " + d.x);
 		System.out.println("d2 = " + d2.x);
 		
@@ -27,6 +34,10 @@ public class ClassVariable {
 	void change(Data d2) {
 		d2.x = 1000;
 		System.out.println("d2 = " + d2.x);
+	}
+	static void change2(Data d) {
+		d.x = 100;
+		System.out.println("d = " + d.x);
 	}
 
 }
