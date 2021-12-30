@@ -18,5 +18,6 @@
 	<classpathentry kind="src" path="javabook_Exception"/>
 	<classpathentry kind="src" path="javabook_javalang"/>
 	<classpathentry kind="src" path="javabook_calendar"/>
+	<classpathentry kind="src" path="javabook_collection"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
