@@ -1,4 +1,4 @@
-package ex_9_StringBuffer;
+package ex9_StringBuffer;
 
 public class StringBufferTest {
 

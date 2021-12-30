@@ -1,4 +1,4 @@
-package ex_9_equals2;
+package ex9_equals2;
 
 class Person {
 	long id;

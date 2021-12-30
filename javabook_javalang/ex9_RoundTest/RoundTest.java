@@ -1,4 +1,4 @@
-package ex_9_RoundTest;
+package ex9_RoundTest;
 
 public class RoundTest {
 

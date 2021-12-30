@@ -1,4 +1,4 @@
-package ex_9_equals;
+package ex9_equals;
 
 class Value {
 	int value;

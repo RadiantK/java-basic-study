@@ -1,4 +1,4 @@
-package ex_9_StringClass;
+package ex9_StringClass;
 
 public class StringClassTest {
 

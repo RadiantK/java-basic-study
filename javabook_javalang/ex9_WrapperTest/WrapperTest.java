@@ -1,4 +1,4 @@
-package ex_9_WrapperTest;
+package ex9_WrapperTest;
 
 public class WrapperTest {
 

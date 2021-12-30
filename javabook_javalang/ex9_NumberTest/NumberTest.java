@@ -1,4 +1,4 @@
-package ex_9_NumberTest;
+package ex9_NumberTest;
 
 public class NumberTest {
 

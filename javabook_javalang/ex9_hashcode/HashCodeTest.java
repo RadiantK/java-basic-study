@@ -1,4 +1,4 @@
-package ex_9_hashcode;
+package ex9_hashcode;
 
 class Person {
 	long id;

@@ -1,4 +1,4 @@
-package ex_9_toString;
+package ex9_toString;
 
 import java.util.Objects;
 
