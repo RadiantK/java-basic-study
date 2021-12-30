@@ -1,4 +1,4 @@
-package ex_10_calendar_get;
+package ex10_calendar_get;
 
 import java.util.Calendar;
 

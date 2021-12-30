@@ -1,4 +1,4 @@
-package ex_10_calendar_set;
+package ex10_calendar_set_today;
 
 import java.util.Calendar;
 
@@ -17,6 +17,7 @@ public class CalendarTest2 {
 			+ DAY_OF_WEEK[date2.get(Calendar.DAY_OF_WEEK)]+"요일입니다.");
 		
 		// 두 날짜간의 차이를 얻으려면, getTimeMillis() 천분의 일초 단위로 반환해야 한다.
+		// 1초 = 1000 이나오기때문에 1000으로 나눠줌
 		long difference = (date2.getTimeInMillis() - date1.getTimeInMillis())/1000;
 		System.out.println("그 날(date1)부터 지금(date2)까지 " + difference + "초가 지났습니다.");
 		System.out.println("일(day)로 계산하면 " + difference/(24*60*60) + "일입니다.");

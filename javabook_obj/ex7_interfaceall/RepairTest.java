@@ -31,7 +31,7 @@ class Unit {
 class Tank extends GroundUnit implements Repairable {
 
 	public Tank() {
-		super(200);
+		super(130);
 	}
 	
 	public String toString() {
@@ -50,7 +50,7 @@ class Marine extends GroundUnit{
 class Dropship extends AirUnit implements Repairable {
 
 	public Dropship() {
-		super(150);
+		super(100);
 		
 	}
 	
@@ -64,13 +64,14 @@ class Scv extends GroundUnit implements Repairable {
 
 	public Scv() {
 		super(60);
-		hitPoint = MAX_HP;
+//		hitPoint = MAX_HP;
 	}
 	
 	void Repair(Repairable r) {
 		if(r instanceof Unit) {
 			Unit u = (Unit)r;
 			while(u.hitPoint != u.MAX_HP) {
+//				System.out.println(u.hitPoint);
 				u.hitPoint++;
 			}
 			System.out.println(u.toString() + "유닛의 수리가 완료되었습니다.");
