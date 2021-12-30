@@ -1,4 +1,4 @@
-package ex_8_Exception2;
+package ex8_Exception2;
 
 import java.io.File;
 

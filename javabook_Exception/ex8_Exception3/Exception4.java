@@ -1,4 +1,4 @@
-package ex_8_Exception3;
+package ex8_Exception3;
 
 public class Exception4 {
 

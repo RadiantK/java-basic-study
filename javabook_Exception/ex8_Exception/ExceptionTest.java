@@ -1,4 +1,4 @@
-package ex_8_Exception;
+package ex8_Exception;
 
 public class ExceptionTest {
 
