@@ -19,5 +19,6 @@
 	<classpathentry kind="src" path="javabook_javalang"/>
 	<classpathentry kind="src" path="javabook_calendar"/>
 	<classpathentry kind="src" path="javabook_collection"/>
+	<classpathentry kind="src" path="javabook_Generics"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
