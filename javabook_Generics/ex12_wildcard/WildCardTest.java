@@ -1,0 +1,89 @@
+package ex12_wildcard;
+
+import java.util.ArrayList;
+
+class Fruit {
+	
+	public String toString() {
+		return "Fruit";
+	}
+}
+class Apple extends Fruit {
+	
+	public String toString() {
+		return "Apple";
+	}
+}
+class Grape extends Fruit {
+	
+	public String toString() {
+		return "Grape";
+	}
+}
+
+class Juice {
+	String name;
+	
+	Juice(String name) {
+		this.name = name + "Juice";
+	}
+	public String toString() {
+		return name;
+	}
+}
+
+class Juicer {
+	static Juice makeJuice(FruitBox<? extends Fruit> box) {
+		String temp = "";
+		
+		for(Fruit f : box.getList()) {
+			temp += f + " ";
+		}
+		return new Juice(temp);
+	}
+}
+
+class Box<T> {
+	ArrayList<T> list = new ArrayList<T>();
+	
+	void add(T item) {
+		list.add(item);
+	}
+	T get(int i) {
+		return list.get(i);
+	}
+	ArrayList<T> getList() {
+		return list;
+	}
+	int size() {
+		return list.size();
+	}
+	public String toString() {
+		return list.toString();
+	}
+}
+class FruitBox<T extends Fruit> extends Box<T> {
+	
+}
+
+public class WildCardTest {
+
+	public static void main(String[] args) {
+
+		FruitBox<Fruit> fruitBox = new FruitBox<Fruit>();
+		FruitBox<Apple> appleBox = new FruitBox<Apple>();
+		
+//		Fruit와 그 자손들 Apple, Grape
+//		FruitBox<? extends Fruit> appleBox = new FruitBox<Apple>();
+		
+		
+		fruitBox.add(new Apple());
+		fruitBox.add(new Grape());
+		appleBox.add(new Apple());
+		appleBox.add(new Apple());
+		
+		System.out.println(Juicer.makeJuice(fruitBox));
+		System.out.println(Juicer.makeJuice(appleBox));
+	}
+
+}
