@@ -11,7 +11,7 @@ class Person {
 	public boolean equals(Object obj) {
 		if(obj instanceof Person) {
 			Person p = (Person)obj;
-			return this.id == p.id;
+			return this.id == p.id; // 객체 자신과 매개변수 obj 비교
 		}
 		return false;
 	}
