@@ -1,6 +1,8 @@
  package ex11_Queue;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 @SuppressWarnings("rawtypes")
 public class QueueTest {
@@ -24,6 +26,7 @@ public class QueueTest {
 				if("".equals(input)) {
 					continue;  
 				} else if (input.equalsIgnoreCase("q")){ // 대소문자 구별안하고 비교
+					System.out.println("==프로그램 종료==");
 					System.exit(0); // 프로그램 종료
 				} else if (input.equalsIgnoreCase("help")) {
 					System.out.println(" help - 도움말을 보여줍니다.");
@@ -36,6 +39,7 @@ public class QueueTest {
 					// 참조변수 타입은 Queue지만 실제 객체는 LinkedList
 					// Queue q = new LinkedList();
 					LinkedList list = (LinkedList)q;
+//					System.out.println(list.toString());
 					
 					final int SIZE = list.size();
 					// size를 반복문이 돌때마다 호출하므로 상수값으로 바꿔줌
