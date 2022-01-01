@@ -1,5 +1,7 @@
 package ex9_StringClass;
 
+import java.util.Arrays;
+
 public class StringClassTest {
 
 	public static void main(String[] args) {
@@ -17,6 +19,14 @@ public class StringClassTest {
 		
 		System.out.println(String.join("",strVal2,"+",strVal2,"=")+sum);
 		System.out.println(strVal+"+"+strVal2+"="+sum2);
+		System.out.println();
+		
+		
+		String animals = "dog, cat, bear";
+		String[] arr = animals.split(", ");
+		System.out.println(Arrays.toString(arr));
+		String str = String.join("-", arr); 
+		System.out.println(str); // dog-cat-bear
 	}
 
 }

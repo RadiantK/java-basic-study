@@ -16,11 +16,11 @@ class Person {
 //	}
 	
 	public boolean equals(Object obj) {
-	if(!(obj instanceof Person)) {
-		return false;	
-	}
-	Person p = (Person)obj;
-	return this.id == p.id;
+		if(!(obj instanceof Person)) {
+			return false;	
+		}
+		Person p = (Person)obj;
+		return this.id == p.id;
 	}
 	
 }

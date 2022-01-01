@@ -16,8 +16,9 @@ public class StringBufferTest {
 		System.out.println("sb2 = " + sb2);
 		System.out.println("sb3 = " + sb3);
 		
-		System.out.println("sb = "+sb.deleteCharAt(10));
-		System.out.println("sb = "+sb.delete(3, 6));
+		System.out.println("sb = "+sb.deleteCharAt(9));
+		System.out.println("sb = "+sb.delete(4, 6));
+		System.out.println("sb = "+sb.reverse());
 		System.out.println("sb = "+sb.insert(3, "abc"));
 		System.out.println("sb = "+sb.replace(6, sb.length(), "END"));
 		
