@@ -61,7 +61,7 @@ class Buyer {
 		System.out.println(pro + "를 구매했습니다.");
 	}
 	
-	void summury() {
+	void summary() {
 		int sum = 0;
 		String temp="";
 		
@@ -90,7 +90,7 @@ public class PolyArgumentTest {
 		b.Buy(tv);
 		b.Buy(com);
 		b.Buy(au);
-		b.summury();
+		b.summary();
 		
 	}
 
