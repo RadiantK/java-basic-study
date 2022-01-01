@@ -29,11 +29,11 @@ public class ClassTest {
 //		Car car = null;
 //		FireEngine fe = new FireEngine();
 //		FireEngine fe2 = null;
-		
+//		
 //		fe.water();
 //		car = (Car)fe;
 ////		car.water(); ¿¡·¯
-		
+//		
 //		fe2 = (FireEngine)car;
 //		fe2.water();
 		
@@ -45,15 +45,14 @@ public class ClassTest {
 
 	}
 	
-		void doWork(Car car2) {
-			if(car2 instanceof FireEngine) {
-				FireEngine fe2 = (FireEngine)car2;
-				fe2.water();
-			} else {
-				System.out.println("error");
-			}
-			
+	void doWork(Car car2) {
+		if(car2 instanceof FireEngine) {
+			FireEngine fe2 = (FireEngine)car2;
+			fe2.water();
+		} else {
+			System.out.println("error");
 		}
 		
+	}
 
 }

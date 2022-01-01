@@ -17,7 +17,6 @@ class Com extends Product {
 
 	public Com() {
 		super(100);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public String toString() {
@@ -33,7 +32,6 @@ class  Tv extends Product {
 	public Tv(int price) {
 		super(price);
 		this.price = price;
-		// TODO Auto-generated constructor stub
 	}
 	
 	public String toString() {
@@ -46,7 +44,6 @@ class Audio extends Product {
 	
 	public Audio() {
 		super(150);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public String toString() {
@@ -72,7 +69,7 @@ class Buyer {
 		System.out.println( p +" 를 구매하셧습니다.");
 	}
 	
-	void summry() {
+	void summary() {
 		int sum=0;
 		String temp = "";
 		
@@ -103,7 +100,7 @@ public class Casting2 {
 		b.buy(t);
 		b.buy(c);
 		b.buy(a);
-		b.summry();
+		b.summary();
 		
 		System.out.println("남은돈 = "+ b.money);
 		System.out.println("보너스포인트 = "+ b.bonuspoint);

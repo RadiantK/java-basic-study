@@ -49,14 +49,14 @@ class Box<T> {
 
 public class CastingTest {
 
-	@SuppressWarnings({ "rawtypes", "unused" })
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-
-		Box b = null;
-		Box<String> bStr = null;
 		
-//		b = (Box)bStr; // Box<String> -> Box 가능은한데 경고
-//		bStr = (Box<String>)b; // Box -> Box<String> 가능하지만 경고
+//		양변의 타입이 안맞으므로 원래 들어가야 하지만 생략
+//		FruitBox<? extends Fruit> box = (FruitBox<? extends Fruit>)new FruitBox<Fruit>();
+		FruitBox<? extends Fruit> box = new FruitBox<Fruit>();
+		FruitBox<? extends Apple> abox = new FruitBox<Apple>();
+//		FruitBox<Apple> appleBox = (FruitBox<Apple>)abox; 가능하지만 경고
 	}
 
 }

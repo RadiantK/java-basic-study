@@ -43,13 +43,16 @@ public class AbstractTest2 {
 		// 객체배열 = 참조변수를 묶은것
 //		Unit[] u = {new Marine(), new Tank(), new Dropship()};
 		
-		Unit[] u = new Unit[3];
+		Unit[] u = new Unit[5];
 		
 		u[0] = new Marine();
 		u[1] = new Tank();
 		u[2] = new Dropship();
 		
 		for(int i=0; i<u.length; i++) {
+			if (u[i]==null) {
+				break;
+			}
 			u[i].move(100, 300);
 		}
 	}

@@ -8,78 +8,98 @@ class Unit {
 	int hitPoint;
 	final int MAX_HP;
 	
-	Unit(int hp) {
-		MAX_HP = hp;
+	public Unit(int hp) {
+		this.MAX_HP = hp;
 	}
 }
 
 class GroundUnit extends Unit {
 
-	GroundUnit(int hp) {
+	public GroundUnit(int hp) {
 		super(hp);
-	}	
+	}
+	
 }
 
 class AirUnit extends Unit {
-
-	AirUnit(int hp) {
-		super(hp);
-	}
-}
-
-class Tank extends GroundUnit implements Repair {
-
-	Tank() {
-		super(120);
-	}
 	
-	public String toString() {
-		return "Tank";
+	public AirUnit(int hp) {
+		super(hp);
 	}
 }
 
 class Dropship extends AirUnit implements Repair {
 
-	Dropship() {
-		super(100);
+	public Dropship(int hp) {
+		super(hp);
 	}
 	
 	public String toString() {
-		return "Dropship";
+		return "Dropship ";
+	}
+}
+
+class Tank extends GroundUnit implements Repair {
+	
+	public Tank(int hp) {
+		super(hp);
+	}
+	public String toString() {
+		return "Tank ";
+	}
+}
+
+class Goliat extends GroundUnit implements Repair {
+	
+	public Goliat(int hp) {
+		super(hp);
+	}
+	public String toString() {
+		return "Goliat ";
+	}
+}
+
+class Firebat extends GroundUnit {
+	
+	public Firebat(int hp) {
+		super(hp);
+	}
+	public String toString() {
+		return "marine ";
 	}
 }
 
 class Scv extends GroundUnit implements Repair {
-	int hitPoint;
 
-	Scv() {
-		super(60);	
-	}
+	int hitPoint;
 	
-	void RepairTest(Repair re) {
-		if(re instanceof Unit) {
+	public Scv() {
+		super(50);
+	}
+	void repair(Repair re) {
+		if (re instanceof Unit) {
 			Unit u = (Unit)re;
 			while(u.hitPoint != u.MAX_HP) {
 				u.hitPoint++;
 			}
-			System.out.println(re + "가 수리되었습니다.");
+			System.out.println(u + "유닛의 수리가 완료되었습니다.");
 		}
 	}
+	
 }
-
-
 public class RepairTest2 {
 
 	public static void main(String[] args) {
 		
-		Tank t = new Tank();
-		Dropship d = new Dropship();
+		Scv scv = new Scv();
+		Tank t = new Tank(150);
+		Dropship ds = new Dropship(100);
+		Goliat g = new Goliat(130);
+//		Firebat f = new Firebat(50);
 		
-		Scv s = new Scv();
-		
-		s.RepairTest(t);
-		s.RepairTest(d);
-
+		scv.repair(t);
+		scv.repair(ds);
+		scv.repair(g);
+//		scv.repair(f); // 파이어벳은 리페어 인터페이스를 구현하지 않음
 	}
-
 }
