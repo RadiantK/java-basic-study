@@ -11,7 +11,7 @@ public class ArrayListTest2 {
 		System.out.println();
 	}
 
-	@SuppressWarnings({ "rawtypes", "unused", "unchecked" })
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		
 		ArrayListTest2 al = new ArrayListTest2();
