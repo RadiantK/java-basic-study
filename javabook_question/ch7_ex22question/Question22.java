@@ -98,7 +98,7 @@ public class Question22 {
 
 	public static void main(String[] args) {
 
-		Shape[] arr = {new Circle(5.0), new Rectangle(7,5), new Circle(1)};
+		Shape[] arr = {new Circle(4.0), new Rectangle(7,5), new Circle(1)};
 		
 		System.out.println("ÃÑ ÇÕ : " +sumArea(arr));
 	}
