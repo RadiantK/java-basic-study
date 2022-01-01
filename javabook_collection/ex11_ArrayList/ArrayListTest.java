@@ -19,7 +19,7 @@ public class ArrayListTest {
 		ArrayList list1 = new ArrayList();
 		
 		// ArrayList에는 객체만 저장가능
-		// 오토방싱으로인해서 기본형이 참조형으로 자동 변환
+		// 오토박싱으로인해서 기본형이 참조형으로 자동 변환
 //		list1.add(new Integer(1));
 		list1.add(1);
 		list1.add(3);
@@ -37,7 +37,7 @@ public class ArrayListTest {
 		Collections.sort(list2);
 		at.print(list1, list2);
 		
-		// list1이 list2의 모든요소를 포함하는가
+		// list1이 list2의 모든요소를 포함하는가 불린값
 		System.out.println("list1.containsAll(list2)"+list1.containsAll(list2));
 		
 		list2.add("B");
