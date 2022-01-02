@@ -1,4 +1,4 @@
-package ch11_question;
+package ch11_6question;
 
 import java.util.*;
 
@@ -44,7 +44,7 @@ class Student2 implements Comparable<Student2> {
 	}
 }
 
-public class ComparableTest {
+public class ComparableTest2 {
 
 	
 	@SuppressWarnings("rawtypes")
