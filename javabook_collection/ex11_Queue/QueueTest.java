@@ -10,7 +10,7 @@ public class QueueTest {
 	static Queue q = new LinkedList();
 	static final int MAX_SIZE = 5; // 큐에 최대 5개까지만 저장되도록 함
 
-	@SuppressWarnings("resource")
+	@SuppressWarnings({ "resource", "unchecked" })
 	public static void main(String[] args) {
 
 		System.out.println("help를 입력하면 도움말을 볼 수 있습니다.");
@@ -38,7 +38,7 @@ public class QueueTest {
 					// Queue의 기본 메서드가 너무적음 get()을 쓰기위해서 형변환
 					// 참조변수 타입은 Queue지만 실제 객체는 LinkedList
 					// Queue q = new LinkedList();
-					LinkedList list = (LinkedList)q;
+					LinkedList list = new LinkedList(q);
 //					System.out.println(list.toString());
 					
 					final int SIZE = list.size();
