@@ -1,4 +1,4 @@
-package ch9_3question;
+package ch9_3subString;
 
 public class QuesTest3 {
 

@@ -1,4 +1,4 @@
-package ch9_ex10question;
+package ch9_ex10Format;
 
 public class FormatTest {
 

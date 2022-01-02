@@ -1,4 +1,4 @@
-package ch9_2question;
+package ch9_2Equals2;
 
 class Point3D {
 	int x;

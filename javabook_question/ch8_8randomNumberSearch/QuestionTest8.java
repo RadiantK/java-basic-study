@@ -1,4 +1,4 @@
-package ch8_8question;
+package ch8_8randomNumberSearch;
 
 import java.util.Scanner;
 

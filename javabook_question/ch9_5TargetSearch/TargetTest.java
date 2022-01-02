@@ -1,4 +1,4 @@
-package ch9_5question;
+package ch9_5TargetSearch;
 
 public class TargetTest {
 

@@ -1,4 +1,4 @@
-package ch7_ex22question;
+package ch7_ex22calcArea;
 
 class Point {
 	int x;

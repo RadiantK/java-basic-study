@@ -1,4 +1,4 @@
-package ch9_1question;
+package ch9_1EqualsTest;
 
 import java.util.Objects;
 

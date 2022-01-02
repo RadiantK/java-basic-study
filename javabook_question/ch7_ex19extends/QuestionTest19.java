@@ -1,4 +1,4 @@
-package ch7_ex19question;
+package ch7_ex19extends;
 
 class Product {
 	int price;

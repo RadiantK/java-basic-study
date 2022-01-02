@@ -1,4 +1,4 @@
-package ch9_ex11question;
+package ch9_ex11commandgugudan;
 
 public class CommendgugudanTest {
 
