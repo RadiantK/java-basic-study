@@ -63,12 +63,11 @@ class Student implements Comparable {
 	}
 	@Override
 	public int compareTo(Object obj) {
-		int result = -1;
 		if(obj instanceof Student) {
 			Student st = (Student)obj;
 			return (this.name).compareTo(st.name);					
 		}
-		return result;
+		return -1;
 	}
 }
 
@@ -131,7 +130,6 @@ public class ScoreEvaluationTest {
 		System.out.println("*                 성적 관리 프로그램                 *");
 		System.out.println("*************************************************");
 		System.out.println();
-		System.out.println();
 		System.out.println("1. 학생성적 입력하기");
 		System.out.println();
 		System.out.println("2. 학생성적 삭제하기");
@@ -139,7 +137,6 @@ public class ScoreEvaluationTest {
 		System.out.println("3. 학생성적 정렬해서보기(이름순, 성적순)");
 		System.out.println();
 		System.out.println("4. 프로그램 종료");
-		System.out.println();
 		System.out.println();
 		System.out.println("원하는 메뉴를 선택하세요. (1~4)");
 		
@@ -261,7 +258,7 @@ public class ScoreEvaluationTest {
 		int total = 0;
 		
 		System.out.println("");
-		System.out.println("이름 번호 국어 영어 수학 총점");
+		System.out.println("이름 번호    국어    영어    수학    총점");
 		System.out.println("============================================");
 		
 		int length = record.size();
