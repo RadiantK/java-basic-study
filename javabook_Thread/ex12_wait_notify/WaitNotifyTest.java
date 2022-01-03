@@ -15,7 +15,7 @@ class Customer implements Runnable {
 	public void run() {
 		while(true) {
 			try {
-				Thread.sleep(100);
+				Thread.sleep(1000);
 			} catch(InterruptedException e) {
 				
 			}
@@ -63,7 +63,7 @@ class Table {
 			System.out.println(name+" is waiting.");
 			try {
 				wait();
-				Thread.sleep(500);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				
 			}
@@ -82,7 +82,7 @@ class Table {
 				System.out.println(name + " is waiting");
 				try {
 					wait();
-					Thread.sleep(500);
+					Thread.sleep(1000);
 				} catch (InterruptedException e) {
 					
 				}
@@ -100,7 +100,7 @@ class Table {
 				try {
 					System.out.println(name+" is waiting.");
 					wait(); // 원하는 음식이 없는 CUST쓰레드를 기다리게 한다.
-					Thread.sleep(500);
+					Thread.sleep(1000);
 				} catch(InterruptedException e) {}	
 			} // while(true)			
 		}
