@@ -43,7 +43,7 @@ class Cook implements Runnable {
 			int idx = (int)(Math.random()*table.dishNum());
 			table.add(table.dishNames[idx]);
 			try {
-				Thread.sleep(100);
+				Thread.sleep(1000);
 			} catch( InterruptedException e) {
 				
 			}
