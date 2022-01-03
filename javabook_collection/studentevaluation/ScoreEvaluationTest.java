@@ -50,6 +50,7 @@ class Student implements Comparable {
 		switch(alignment) {
 			case LEFT:
 				default:
+//				source의 0번째부터의 내용을 ch의 0번째 위치부터 source.length 만큼복사 
 				System.arraycopy(source, 0, ch, 0, source.length);
 				break;
 			case CENTER:
