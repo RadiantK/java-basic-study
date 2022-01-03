@@ -2,7 +2,7 @@ package ex14_LamdaMethod;
 
 import java.util.function.*;
 
-public class MethodTest {
+public class LamdaMethodTest {
 
 	public static void main(String[] args) {
 
