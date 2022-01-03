@@ -6,3 +6,7 @@ WARNING: 이름이 너무 길어요
 WARNING: name must not be null
 12월 24, 2021 4:36:31 오후 ch11_Logger.MyLogger warning
 WARNING: 이름이 너무 길어요
+1월 03, 2022 1:49:27 오후 ch11_Logger.MyLogger warning
+WARNING: name must not be null
+1월 03, 2022 1:49:27 오후 ch11_Logger.MyLogger warning
+WARNING: 이름이 너무 길어요
