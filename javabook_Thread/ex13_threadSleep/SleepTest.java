@@ -1,4 +1,4 @@
-package ex12_threadSleep;
+package ex13_threadSleep;
 
 class Thread1 extends Thread {
 	public void run() {

@@ -1,4 +1,4 @@
-package ex12_thread;
+package ex13_thread;
 
 class MyThread1 extends Thread {
 	

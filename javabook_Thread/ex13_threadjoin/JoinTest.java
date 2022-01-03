@@ -1,4 +1,4 @@
-package ex12_threadjoin;
+package ex13_threadjoin;
 
 class Thread1 extends Thread {
 	public void run() {

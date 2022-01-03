@@ -1,4 +1,4 @@
-package ex12_wait_notify;
+package ex13_wait_notify;
 
 import java.util.ArrayList;
 

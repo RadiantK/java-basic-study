@@ -1,4 +1,4 @@
-package ex12_Daemonthread;
+package ex13_Daemonthread;
 
 public class DaemonThread implements Runnable {
 	static boolean autoSave = false;

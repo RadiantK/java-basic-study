@@ -1,4 +1,4 @@
-package ex12_thread;
+package ex13_thread;
 
 class Thread12 extends Thread {
 	@Override

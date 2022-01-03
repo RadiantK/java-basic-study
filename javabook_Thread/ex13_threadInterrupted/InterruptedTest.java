@@ -1,4 +1,4 @@
-package ex12_threadInterrupted;
+package ex13_threadInterrupted;
 
 import javax.swing.JOptionPane;
 

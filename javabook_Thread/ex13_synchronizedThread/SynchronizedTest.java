@@ -1,4 +1,4 @@
-package ex12_synchronizedThread;
+package ex13_synchronizedThread;
 
 class Account {
 	private int balance = 1000;
