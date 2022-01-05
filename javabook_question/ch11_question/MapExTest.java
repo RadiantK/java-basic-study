@@ -11,8 +11,8 @@ public class MapExTest {
 		
 		map.put("가나다", 100);
 		map.put("기니디", 70);
-		map.put("구누두", 60);
-		map.put("개내대", 50);
+		map.put("구누두", 72);
+		map.put("개내대", 67);
 		map.put("겨녀뎌", 80);
 		
 		Set set = map.entrySet();

@@ -25,7 +25,7 @@ public class QuesTest6 {
 		for(int i=0; i<ch.length; i++) {
 			ch[i] ='0';
 		}
-		System.arraycopy(src.toCharArray(), 0, ch, length-src.length(), src.length());
+		System.arraycopy(src.toCharArray(), 0, ch, src.length(), src.length());
 		
 		return new String(ch);
 	}
