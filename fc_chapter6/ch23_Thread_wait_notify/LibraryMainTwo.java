@@ -14,13 +14,17 @@ class FastLibrary2 {
 		shelf.add("해리포터4");
 	}
 	
-	public synchronized String lendBook() throws InterruptedException {
+	public synchronized String lendBook()  {
 		
 		Thread t = Thread.currentThread();	
 		
 		while (shelf.size() == 0) {
 			System.out.println(t.getName() + " : " + " waiting start");
-			wait();
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			System.out.println(t.getName() + " : " + " waiting end");
 		}
 		
@@ -62,7 +66,7 @@ class Student2 extends Thread {
 			System.out.println(getName() + " 빌리지 못함");
 			return;
 		}
-		sleep(5000);		
+		sleep(3000);		
 		LibraryMainTwo.library.returnBook(title);
 		
 		} catch(InterruptedException e) {
