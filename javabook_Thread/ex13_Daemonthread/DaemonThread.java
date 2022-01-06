@@ -6,6 +6,7 @@ public class DaemonThread implements Runnable {
 	public static void main(String[] args) {
 
 		Thread t = new Thread(new DaemonThread());
+		System.out.println(t.getName());
 		t.setDaemon(true); // 보조쓰레드는 일반쓰레드가 하나도 없으면 자동종료
 		t.start();
 		
@@ -13,16 +14,16 @@ public class DaemonThread implements Runnable {
 			try {
 				Thread.sleep(1000);
 			} catch(InterruptedException e) {
-				System.out.println(e);
+
 			}
 			System.out.println(i);
 			
 			if(i==5) {
 				autoSave = true;
 			}
-			
-			System.out.println("프로그램을 종료합니다.");
+				
 		}
+		System.out.println("프로그램을 종료합니다.");
 	}
 	public void run() {
 		while(true) { // 무한루프

@@ -37,6 +37,7 @@ public class JoinTest {
 			
 		}
 		System.out.println("소요시간 :  " +(System.currentTimeMillis() - startTime));
+		System.out.println("main 종료");
 	}
 
 }
