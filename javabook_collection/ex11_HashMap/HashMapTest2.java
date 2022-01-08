@@ -27,6 +27,7 @@ public class HashMapTest2 {
 		System.out.println("참가자명단 : " + set);
 		
 		Collection values = map.values();
+		System.out.println("참가자 점수 : " + values);
 		it = values.iterator();
 		
 		int total = 0;
