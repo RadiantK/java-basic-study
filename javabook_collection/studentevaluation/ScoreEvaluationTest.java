@@ -126,6 +126,7 @@ public class ScoreEvaluationTest {
 		}
 	}
 
+//	메뉴를 보여주는 메서드
 	static int displayMenu() {
 		System.out.println("*************************************************");
 		System.out.println("*                 성적 관리 프로그램                 *");
@@ -160,6 +161,8 @@ public class ScoreEvaluationTest {
 		
 		return menu;
 	}
+
+//	학생의 성적 데이터를 입력받는 메소드
 	@SuppressWarnings({ "unchecked", "resource" })
 	static void inputRecord() {
 		System.out.println("1. 학생 성적 입력하기");
@@ -175,7 +178,8 @@ public class ScoreEvaluationTest {
 				if(!input.equalsIgnoreCase("q")) {
 					Scanner sc2 = new Scanner(input).useDelimiter(",");
 					
-					record.add(new Student(sc2.next(), sc2.next(), sc2.nextInt(), sc2.nextInt(), sc2.nextInt()));
+					record.add(new Student(sc2.next(), sc2.next(), sc2.nextInt()
+							, sc2.nextInt(), sc2.nextInt()));
 				} else {
 					return;
 				}
@@ -184,6 +188,8 @@ public class ScoreEvaluationTest {
 			}
 		}
 	}
+	
+//	학생 데이터를 제거하는 메소드
 	static void delectRecord() {
 		while(true) {
 			displayRecord();
@@ -218,6 +224,7 @@ public class ScoreEvaluationTest {
 		}
 	}
 	
+//	데이터를 정렬하는 메소드
 	@SuppressWarnings("unchecked")
 	static void sortRecord() {
 		while(true) {
@@ -252,6 +259,7 @@ public class ScoreEvaluationTest {
 		}
 	}
 	
+//	학생 데이터를 출력하는 메소드
 	static void displayRecord() {
 		int koreanTotal = 0;
 		int englishTotal = 0;
