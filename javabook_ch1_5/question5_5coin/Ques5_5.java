@@ -1,4 +1,4 @@
-package question5_5;
+package question5_5coin;
 
 public class Ques5_5 {
 
