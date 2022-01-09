@@ -61,7 +61,6 @@ class Student extends Thread {
 			sleep(4000);
 			LibraryMain.library.returnBook(title);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -89,9 +88,7 @@ public class LibraryMain {
 		std5.start();
 		std6.start();
 		std7.start();
-		
-		
-		
+				
 	}
 
 }
