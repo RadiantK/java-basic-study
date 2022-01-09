@@ -1,4 +1,4 @@
-package ch6_question_23;
+package ch6_question_23max;
 
 import java.util.Arrays;
 
