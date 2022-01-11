@@ -55,6 +55,7 @@ public class PolyArgumentTest {
 		Buyer b = new Buyer();
 //		Tv tv = new Tv();
 		Computer com = new Computer();
+		System.out.println(b.getClass().getName());
 		
 		b.Buy(new Tv());
 		b.Buy(com);
