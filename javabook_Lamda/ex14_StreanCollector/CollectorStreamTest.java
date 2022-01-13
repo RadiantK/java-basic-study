@@ -4,8 +4,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Set;
-import java.util.TreeSet;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -67,19 +65,25 @@ public class CollectorStreamTest {
 		};
 		
 		System.out.printf("1. 단순분할(성별로 분할)%n");
-		Map<Boolean, List<Student>> stuBySex =  Stream.of(stuArr)
-				.collect(Collectors.partitioningBy(Student::isMale));
+		Map<Boolean, List<Student>> stuBySex = Stream.of(stuArr)
+				.collect(Collectors.partitioningBy((Student s) -> s.isMale == true ));
+		//partitioningBy(Student::isMale)
 
-		List<Student> maleStudent   = stuBySex.get(true);
+		List<Student> maleStudent = stuBySex.get(true);
 		List<Student> femaleStudent = stuBySex.get(false);
 
-		for(Student s : maleStudent)   System.out.println(s);
-		for(Student s : femaleStudent) System.out.println(s);
+		for(Student s : maleStudent) {
+			System.out.println(s);
+		}
+		for(Student s : femaleStudent) {
+			System.out.println(s);
+		}
 
 		System.out.printf("%n2. 단순분할 + 통계(성별 학생수)%n");
 		Map<Boolean, Long> stuNumBySex = Stream.of(stuArr)
-				.collect(Collectors.partitioningBy(Student::isMale, Collectors.counting()));
+				.collect(Collectors.partitioningBy(Student::isMale, Collectors.counting())) ;
 
+//		Student::isMale, Collectors.counting()
 		System.out.println("남학생 수 :"+ stuNumBySex.get(true));
 		System.out.println("여학생 수 :"+ stuNumBySex.get(false));
 
@@ -87,7 +91,7 @@ public class CollectorStreamTest {
 		System.out.printf("%n3. 단순분할 + 통계(성별 1등)%n");
 		Map<Boolean, Optional<Student>> topScoreBySex = Stream.of(stuArr)
 				.collect(Collectors.partitioningBy(Student::isMale, 
-						Collectors.maxBy(Comparator.comparingInt(Student::getScore))
+						Collectors.maxBy(Comparator.comparingInt(Student::getScore)) //(Student s) -> s.getScore()
 				));
 		System.out.println("남학생 1등 :"+ topScoreBySex.get(true));
 		System.out.println("여학생 1등 :"+ topScoreBySex.get(false));
@@ -110,7 +114,11 @@ public class CollectorStreamTest {
 		List<Student> failedMaleStu   = failedStuBySex.get(true).get(true);
 		List<Student> failedFemaleStu = failedStuBySex.get(false).get(true);
 
-		for(Student s : failedMaleStu)   System.out.println(s);
-		for(Student s : failedFemaleStu) System.out.println(s);
+		for(Student s : failedMaleStu) {
+			System.out.println(s);
+		}
+		for(Student s : failedFemaleStu) {
+			System.out.println(s);
+		}
 	}
 }
