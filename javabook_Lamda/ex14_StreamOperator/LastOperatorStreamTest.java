@@ -40,9 +40,9 @@ public class LastOperatorStreamTest {
 		
 		OptionalInt max = intStream3.reduce((a,b) -> Integer.max(a, b));
 		OptionalInt min = intStream4.reduce(Integer::min);
-		System.out.println("count: "+count);
-		System.out.println("sum: "+sum);
-		System.out.println("max: "+max.getAsInt());
+		System.out.println("count: "+count); // 단어갯수
+		System.out.println("sum: "+sum); // 단어의 길이를 모두 셈
+		System.out.println("max: "+max.getAsInt()); 
 		System.out.println("min: "+min.getAsInt());
 	}
 
