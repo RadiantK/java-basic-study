@@ -16,7 +16,7 @@ public class LamdaClassTest {
 
 //		Supplier<MyClass> s = () ->  new MyClass();
 //		Supplier<MyClass> s2 = MyClass::new; // 생성자의 메서드 참조 (매서드 없음 연산자)
-		
+//		
 //		MyClass mc = s.get();
 //		System.out.println(mc);
 //		System.out.println(s.get());

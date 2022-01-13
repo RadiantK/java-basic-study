@@ -19,7 +19,7 @@ public class CollectionLamdaTest {
 //		while(it.hasNext()) {
 //			System.out.print(it.next()+", ");		
 //		}
-		list.removeIf(x-> x%2==0 || x%3==0); // 2또는 3의 배수 제거
+		list.removeIf(x-> x % 2 == 0 || x % 3 == 0); // 2또는 3의 배수 제거
 		System.out.println(list);
 		
 		list.replaceAll(i->i*10); // 리스트의 i값을 i*10으로 교체

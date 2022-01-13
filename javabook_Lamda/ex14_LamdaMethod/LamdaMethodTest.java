@@ -11,6 +11,10 @@ public class LamdaMethodTest {
 		
 		System.out.println(f.apply("100")+100);
 		System.out.println(f2.apply("200")+200);
+		
+		Function<Integer, String> f3 = (Integer i) -> Integer.toString(i);
+		
+		System.out.println(f3.apply(500)+"100");
 	}
 
 }
